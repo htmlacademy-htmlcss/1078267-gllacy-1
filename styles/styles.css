@@ -21,24 +21,424 @@
   font-display: swap;
 }
 
-@font-face {font-family: "Inter";
+@font-face {
+  font-family: "Inter";
   font-style: italic;
   font-weight: 400;
   src: url("../fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
 
-@font-face {font-family: "Inter";
+@font-face {
+  font-family: "Inter";
   font-style: italic;
   font-weight: 700;
   src: url("../fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
 
-@font-face {font-family: "Inter";
+@font-face {
+  font-family: "Inter";
   font-style: italic;
   font-weight: 900;
   src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2d3440;
+  background-color: #feafc3;
+}
+
+/*Хэдер*/
+
+.navigation-list,
+.catalog-list,
+.slider-list,
+.social-media-list,
+.slider-pagination,
+.special-offers-list,
+.goods-list,
+.about-company-advantages-list,
+.footer-additional-info-list,
+.breadcrumbs,
+.catalog-filter-fat-content-list,
+.catalog-filter-icecream-toppings-list,
+.goods-card-pagination {
+  list-style-type: none;
+}
+.navigation-link {
+  line-height: 20px;
+  text-align: center;
+  color: #2d3440;
+  text-decoration: none;
+}
+.catalog-item-link {
+  font-size: 14px;
+  text-align: center;
+  color: #2d3440;
+  text-decoration: none;
+}
+.catalog-new-products {
+  font-weight: 700;
+}
+
+.navigation-contact-phone {
+  font-weight: 700;
+  text-align: center;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.navigation-user {
+  font-size: 14px;
+  text-align: center;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+/*Слайдер*/
+
+.slider-item-title {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.slider-item-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button {
+  border-radius: 26px;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  background: #fcfcfc no-repeat;
+  box-shadow: 0px 4px 12px 0px rgba(45, 52, 64, 0.1);
+  color: #2d3440;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.slider-button {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #fcfcfc;
+  background: rgba(252, 252, 252, 0.3);
+}
+
+/* .slider-image {
+  position: relative;
+
+}
+
+.slider-image::after {
+content: "";
+position: absolute;
+width: 327px;
+height: 312px;
+background-color: #FFCBD8;
+border-radius: 50%;
+display:block;
+top: 0;
+left: 0;
+} */
+
+.slider-pagination-button {
+  width: 12px;
+  height: 12px;
+  background: #fcfcfc no-repeat;
+  border-radius: 50%;
+  border: none;
+}
+
+.button-social-media {
+  background-color: #feafc3;
+  text-decoration: none;
+}
+
+/*main*/
+
+.special-offers-description,
+.poppular-goods-description,
+.about-company-description {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+}
+
+.special-offers-item {
+  width: 570px;
+  height: 268px;
+  border-radius: 16px;
+  background: #f79;
+}
+
+.special-offers-item-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.goods-card {
+  width: 270px;
+  height: 281px;
+  border-radius: 8px;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+}
+
+.goods-card-link {
+  text-decoration: none;
+  color: #2d3440;
+  display: block;
+}
+
+.goods-card-name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+.goods-card-descriprion {
+  color: #565c66;
+  text-align: center;
+}
+
+.goods-card-price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.goods-card-button {
+  width: 32px;
+  height: 32px;
+  background: #ff2f64 no-repeat;
+  border-radius: 50%;
+  border: none;
+}
+
+.goods-card-image {
+  border-radius: 50%;
+}
+
+.about-company {
+  width: 1170px;
+  height: 480px;
+  background: url("../images/main/ceo-background.jpg") no-repeat;
+  border-radius: 16px;
+}
+
+.about-company-wrapper {
+  width: 1122px;
+  height: 432px;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.about-company-advantages-description {
+  color: #565c66;
+}
+
+.aditional {
+  width: 570px;
+  height: 224px;
+  background: url("../images/main/additional-background.jpg") no-repeat;
+  border-radius: 16px;
+}
+
+.additional-title {
+  font-size: 16px;
+  line-height: 20px;
+  color: #565c66;
+}
+
+.additional-link {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.button-red {
+  border: 4px solid rgba(255, 47, 100, 0.3);
+  background: #ff2f64;
+  box-shadow: 0px 4px 12px 0px rgba(45, 52, 64, 0.1);
+}
+
+.news {
+  width: 570px;
+  height: 224px;
+  background: url("../images/main/subscribe-background.png") no-repeat;
+  border-radius: 16px;
+}
+
+.news-wrapper {
+  width: 558px;
+  height: 212px;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.news-description {
+  color: #565c66;
+}
+
+.field {
+  width: 332px;
+  height: 48px;
+  border-radius: 4px;
+  border: 1px solid #b9b9b9;
+  background: var(--basic-white, #fff);
+}
+
+.delivery {
+  width: 1170px;
+  height: 534px;
+  background: url("../images/main/delivery-background.jpg") no-repeat;
+  border-radius: 16px;
+}
+
+.delivery-order-wrapper {
+  width: 500px;
+  height: 406px;
+  border-radius: 8px;
+  background: #fcfcfc;
+  box-shadow: 0px 15px 40px 0px rgba(45, 52, 64, 0.12);
+}
+
+.delivery-description-title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.delivery-description {
+  color: #565c66;
+}
+
+.delivery-order-description {
+  color: #565c66;
+}
+
+.delivery-order-date,
+.delivery-order-phone,
+.delivery-order-address {
+  color: #2d3440;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.contacts {
+  width: 1170px;
+  height: 492px;
+  background: url("../images/main/contacts-background.jpg") no-repeat;
+  border-radius: 16px;
+}
+
+.contacts-wrapper {
+  width: 343px;
+  height: 364px;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+}
+.adress-description,
+.contacs-phone-text {
+  color: #565c66;
+}
+
+.contacts-address-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.contacts-phone-number {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color: #2d3440;
+}
+
+.contacts-schedule {
+  font-size: 14px;
+  line-height: 20px;
+  color: #565c66;
+}
+/*футер*/
+
+.footer-additional-info-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.for-suppliers {
+  font-weight: 700;
+}
+
+.footer-made-by-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.htmlacademy-link {
+  color: #2d3440;
+}
+
+/*Каталог*/
+
+.breadcrumbs-link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.breadcrumbs-link-current {
+  text-decoration: underline;
+}
+
+.catalog-goods-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.catalog-goods-filter {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pagination-link {
+  line-height: 20px;
+  color: #2d3440;
+  text-decoration: none;
 }
 
