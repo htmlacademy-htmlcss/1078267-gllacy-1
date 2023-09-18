@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Интернет-магазин: Глейси</title>
+  <title>HTML Academy: Глейси</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">Каталог</a>
           <ul class="catalog-list">
-            <li class="catalog-item"><a class="catalog-item-link" href="#"><b>Новинки</b></a></li>
+            <li class="catalog-item catalog-new-products"><a class="catalog-item-link" href="#"><b>Новинки</b></a></li>
             <li class="catalog-item"><a class="catalog-item-link" href="#">Сливочное</a></li>
             <li class="catalog-item"><a class="catalog-item-link" href="#">Щербеты</a></li>
             <li class="catalog-item"><a class="catalog-item-link" href="#">Фруктовый лед</a></li>
@@ -41,7 +42,8 @@
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <img class="navigation-item-image" src="images/header/login.svg" width="16" height="16" alt="Вход в личный кабинет.">
+            <img class="navigation-item-image" src="images/header/login.svg" width="16" height="16"
+              alt="Вход в личный кабинет.">
             Вход
           </a>
         </li>
@@ -58,7 +60,7 @@
 
   <main class="main-catalog">
     <header class="catalog-header">
-      <h1 class="catalog-header-title">Каталог</h1>
+      <h1 class="catalog-header-title visually-hidden">Каталог</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -67,7 +69,7 @@
           <a class="breadcrumbs-link" href="#">Каталог</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Сливочное мороженное</a>
+          <a class="breadcrumbs-link breadcrumbs-link-current">Сливочное мороженное</a>
         </li>
       </ul>
     </header>
@@ -298,24 +300,28 @@
   </main>
 
   <footer class="page-footer">
+
     <section class="social-media">
       <h2 class="social-media-title visually-hidden">Магазин Глейси в социальных сетях</h2>
       <ul class="social-media-list">
         <li class="social-media-item">
-          <a class="button button-social-media" href="https://t.me/htmlacademy">
-            <img class="button-social-media-icon" src="images/social-media/telegram.svg" width="24" height="24" alt="Ссылка на Телеграм.">
+          <a class="button-social-media" href="https://t.me/htmlacademy">
+            <img class="button-social-media-icon" src="images/social-media/telegram.svg" width="24" height="24"
+              alt="Ссылка на Телеграм.">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="social-media-item">
-          <a class="button button-social-media" href="https://vk.com/htmlacademy">
-            <img class="button-social-media-icon" src="images/social-media/vk.svg" width="24" height="24" alt="Ссылка на Вконтакте.">
+          <a class="button-social-media" href="https://vk.com/htmlacademy">
+            <img class="button-social-media-icon" src="images/social-media/vk.svg" width="24" height="24"
+              alt="Ссылка на Вконтакте.">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social-media-item">
-          <a class="button button-social-media" href="https://www.youtube.com/user/htmlacademyru">
-            <img class="button-social-media-icon" src="images/social-media/youtube.svg" width="24" height="24" alt="Ссылка на Ютюб.">
+          <a class="button-social-media" href="https://www.youtube.com/user/htmlacademyru">
+            <img class="button-social-media-icon" src="images/social-media/youtube.svg" width="24" height="24"
+              alt="Ссылка на Ютюб.">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
@@ -324,13 +330,14 @@
 
     <section class="footer-additional-info">
       <h2 class="footer-additional-info-title visually-hidden">Дополнительная информация о компании</h2>
-      <ul>
-        <li><a class="footer-additional-info-link"><b>Для поставщиков</b></a></li>
-        <li><a class="footer-additional-info-link">Наши документы</a></li>
-        <li><a class="footer-additional-info-link">О производстве</a></li>
-        <li><a class="footer-additional-info-link">Экологические стандарты</a></li>
+      <ul class="footer-additional-info-list">
+        <li><a class="footer-additional-info-link for-suppliers" href="#"><b>Для поставщиков</b></a></li>
+        <li><a class="footer-additional-info-link" href="#">Наши документы</a></li>
+        <li><a class="footer-additional-info-link" href="#">О производстве</a></li>
+        <li><a class="footer-additional-info-link" href="#">Экологические стандарты</a></li>
       </ul>
     </section>
+
     <section class="footer-made-by">
       <h2 class="footer-made-by-title visually-hidden">Информация о разработчиках сайта</h2>
       <a class="footer-made-by-link" href="https://htmlacademy.ru/">
@@ -340,6 +347,7 @@
       <p class="footer-made-by-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html
           academy</a> © 2021</p>
     </section>
+
   </footer>
 </body>
 
