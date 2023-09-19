@@ -452,7 +452,7 @@ left: 0;
   width: 104px;
 }
 .social-media-list-footer {
-margin-right: 259px;
+  margin-right: 259px;
 }
 
 .footer-additional-info-link {
@@ -481,6 +481,17 @@ margin-right: 259px;
 }
 
 /*Каталог*/
+.catalog-header {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.breadcrumbs {
+  width: 379px;
+  margin: 0;
+  padding: 0;
+}
 
 .breadcrumbs-link {
   font-size: 14px;
@@ -494,15 +505,34 @@ margin-right: 259px;
   text-decoration: underline;
 }
 
+.catalog-goods-filter {
+  display: flex;
+  width: 1170px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
 .catalog-goods-title {
   font-size: 32px;
   font-weight: 900;
   line-height: 46px;
+  margin: 0;
+  padding: 0;
 }
 
-.catalog-goods-filter {
-  font-size: 14px;
-  line-height: 20px;
+.catalog-filter-wrapper {
+  width: 823px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.goods {
+  display: flex;
+  width: 1170px;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-link {
