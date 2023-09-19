@@ -59,6 +59,7 @@ body {
 
 .navigation-logo {
   width: 137px;
+  margin-right: 16px;
 }
 
 .navigation-list {
@@ -441,8 +442,21 @@ left: 0;
   color: #565c66;
 }
 /*футер*/
+.page-footer-wrapper {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.social-media-list {
+  width: 104px;
+}
+.social-media-list-footer {
+margin-right: 259px;
+}
 
 .footer-additional-info-link {
+  width: 356px;
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
@@ -453,6 +467,10 @@ left: 0;
   font-weight: 700;
 }
 
+.footer-made-by {
+  max-width: 193px;
+  margin-left: auto;
+}
 .footer-made-by-text {
   font-size: 12px;
   line-height: 16px;
