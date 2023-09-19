@@ -21,7 +21,6 @@
   font-display: swap;
 }
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -35,7 +34,14 @@
   overflow: hidden;
 }
 
+html {
+  height: 100%;
+}
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -44,6 +50,27 @@ body {
 }
 
 /*Хэдер*/
+
+.navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  width: 137px;
+}
+
+.navigation-list {
+  width: 422px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 431px;
+  margin-left: auto;
+}
 
 .navigation-list,
 .catalog-list,
@@ -93,8 +120,23 @@ body {
   text-decoration: none;
 }
 
+/*main*/
+
+.main-wrapper {
+  flex-grow: 1;
+}
+
+.page-wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 /*Слайдер*/
 
+.slider-list {
+  margin: 0;
+  padding: 0;
+}
 .slider-item-title {
   font-size: 36px;
   font-weight: 900;
@@ -155,8 +197,6 @@ left: 0;
   text-decoration: none;
 }
 
-/*main*/
-
 .special-offers-description,
 .poppular-goods-description,
 .about-company-description {
@@ -166,6 +206,12 @@ left: 0;
   text-align: center;
 }
 
+.special-offers-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
 .special-offers-item {
   width: 570px;
   height: 268px;
@@ -177,6 +223,13 @@ left: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
+}
+
+.goods-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .goods-card {
@@ -223,6 +276,10 @@ left: 0;
 }
 
 .about-company {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   width: 1170px;
   height: 480px;
   background: url("../images/main/ceo-background.jpg") no-repeat;
@@ -238,6 +295,13 @@ left: 0;
 
 .about-company-advantages-description {
   color: #565c66;
+}
+
+.additional-and-news {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .aditional {
@@ -294,6 +358,10 @@ left: 0;
 }
 
 .delivery {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   width: 1170px;
   height: 534px;
   background: url("../images/main/delivery-background.jpg") no-repeat;
@@ -332,6 +400,10 @@ left: 0;
 }
 
 .contacts {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   width: 1170px;
   height: 492px;
   background: url("../images/main/contacts-background.jpg") no-repeat;
@@ -420,4 +492,3 @@ left: 0;
   color: #2d3440;
   text-decoration: none;
 }
-
