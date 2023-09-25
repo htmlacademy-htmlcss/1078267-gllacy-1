@@ -49,6 +49,22 @@ body {
   background-color: #feafc3;
 }
 
+.navigation-list,
+.catalog-list,
+.slider-list,
+.social-media-list,
+.slider-pagination,
+.special-offers-list,
+.goods-list,
+.about-company-advantages-list,
+.footer-additional-info-list,
+.breadcrumbs,
+.catalog-filter-fat-content-list,
+.catalog-filter-icecream-toppings-list,
+.goods-card-pagination {
+  list-style-type: none;
+}
+
 /*Хэдер*/
 
 .navigation {
@@ -71,22 +87,6 @@ body {
 .navigation-user {
   max-width: 431px;
   margin-left: auto;
-}
-
-.navigation-list,
-.catalog-list,
-.slider-list,
-.social-media-list,
-.slider-pagination,
-.special-offers-list,
-.goods-list,
-.about-company-advantages-list,
-.footer-additional-info-list,
-.breadcrumbs,
-.catalog-filter-fat-content-list,
-.catalog-filter-icecream-toppings-list,
-.goods-card-pagination {
-  list-style-type: none;
 }
 
 .navigation-link {
@@ -134,10 +134,17 @@ body {
 
 /*Слайдер*/
 
+.slider {
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
 .slider-list {
   margin: 0;
   padding: 0;
 }
+
 .slider-item-title {
   font-size: 36px;
   font-weight: 900;
@@ -207,6 +214,12 @@ left: 0;
   text-align: center;
 }
 
+.special-offers {
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
 .special-offers-list {
   display: flex;
   justify-content: space-between;
@@ -215,7 +228,6 @@ left: 0;
 }
 .special-offers-item {
   width: 570px;
-  height: 268px;
   border-radius: 16px;
   background: #f79;
 }
@@ -224,6 +236,13 @@ left: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
+}
+
+.goods {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .goods-list {
@@ -235,7 +254,6 @@ left: 0;
 
 .goods-card {
   width: 270px;
-  height: 281px;
   border-radius: 8px;
   background-color: #fcfcfc;
 }
@@ -279,19 +297,22 @@ left: 0;
 .about-company {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
   width: 1170px;
-  height: 480px;
+  margin: 0 auto;
+  margin-bottom: 80px;
   background: url("../images/main/ceo-background.jpg") no-repeat;
   border-radius: 16px;
 }
 
 .about-company-wrapper {
   width: 1122px;
-  height: 432px;
   background-color: #fff;
   border-radius: 16px;
+}
+
+.about-company-advantages-list {
+  margin: 0;
+  padding: 0;
 }
 
 .about-company-advantages-description {
@@ -301,13 +322,13 @@ left: 0;
 .additional-and-news {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .aditional {
   width: 570px;
-  height: 224px;
   background: url("../images/main/additional-background.jpg") no-repeat;
   border-radius: 16px;
 }
@@ -334,14 +355,12 @@ left: 0;
 
 .news {
   width: 570px;
-  height: 224px;
   background: url("../images/main/subscribe-background.png") no-repeat;
   border-radius: 16px;
 }
 
 .news-wrapper {
   width: 558px;
-  height: 212px;
   background-color: #fff;
   border-radius: 16px;
 }
@@ -361,17 +380,15 @@ left: 0;
 .delivery {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
   width: 1170px;
-  height: 534px;
+  margin: 0 auto;
+  margin-bottom: 80px;
   background: url("../images/main/delivery-background.jpg") no-repeat;
   border-radius: 16px;
 }
 
 .delivery-order-wrapper {
   width: 500px;
-  height: 406px;
   border-radius: 8px;
   background: #fcfcfc;
   box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
@@ -403,20 +420,18 @@ left: 0;
 .contacts {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
   width: 1170px;
-  height: 492px;
+  margin: 0 auto;
   background: url("../images/main/contacts-background.jpg") no-repeat;
   border-radius: 16px;
 }
 
 .contacts-wrapper {
   width: 343px;
-  height: 364px;
   background-color: #fcfcfc;
   border-radius: 8px;
 }
+
 .adress-description,
 .contacs-phone-text {
   color: #565c66;
@@ -523,14 +538,6 @@ left: 0;
 
 .catalog-filter-wrapper {
   width: 823px;
-  margin: 0;
-  padding: 0;
-}
-
-
-.goods {
-  display: flex;
-  width: 1170px;
   margin: 0;
   padding: 0;
 }
