@@ -65,6 +65,7 @@ body {
   list-style-type: none;
 }
 
+
 /*Хэдер*/
 
 .navigation {
@@ -496,14 +497,21 @@ left: 0;
 }
 
 /*Каталог*/
+
+.page-header-catalog {
+  margin-bottom: 32px;
+}
+
+
+
 .catalog-header {
   display: flex;
-  width: 1170px;
-  margin: 0 auto;
+  width: 379px;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs {
-  width: 379px;
   margin: 0;
   padding: 0;
 }
@@ -520,28 +528,43 @@ left: 0;
   text-decoration: underline;
 }
 
-.catalog-goods-filter {
-  display: flex;
-  width: 1170px;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-}
 .catalog-goods-title {
   font-size: 32px;
   font-weight: 900;
   line-height: 46px;
   margin: 0;
   padding: 0;
-}
+  }
 
+.catalog-goods-filter {
+  display: flex;
+  width: 1170px;
+  margin: 0;
+  margin-bottom: 44px;
+  font-size: 14px;
+  line-height: 20px;
+}
 .catalog-filter-wrapper {
   width: 823px;
   margin: 0;
-  padding: 0;
+  }
+
+  .catalog-goods {
+    margin-bottom: 16px;
+  }
+
+.pagination-show-more-goods-wrapper {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
+.goods-card-pagination {
+margin: 0;
+padding: 0;
+
+}
 .pagination-link {
   line-height: 20px;
   color: #2d3440;

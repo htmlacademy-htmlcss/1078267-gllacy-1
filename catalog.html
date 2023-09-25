@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header page-header-catalog">
     <nav class="navigation">
       <a class="navigation-logo">
         <img class=page-header-logo src="images/header/logo.svg" width="137" height="55.72"
@@ -75,92 +75,92 @@
             <a class="breadcrumbs-link breadcrumbs-link-current">Сливочное мороженное</a>
           </li>
         </ul>
-      </header>
+        </header>
       <section class="catalog-goods-filter">
         <h2 class="catalog-goods-title">Сливочное мороженое</h2>
         <div class="catalog-filter-wrapper">
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <span class="catalog-goods-select-title">Сортировка</span>
-          <select class="catalog-goods-select-list" aria-label="Сортировка">
-            <option value="popular" selected>По популярности</option>
-            <option value="from-chip-to-expensive">По ценам от низких к высоким</option>
-            <option value="from-expensive-to-chip">По ценам от высоких к низким</option>
-            <option value="special-offers">Акции и скидки</option>
-          </select>
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <span class="catalog-goods-select-title">Сортировка</span>
+            <select class="catalog-goods-select-list" aria-label="Сортировка">
+              <option value="popular" selected>По популярности</option>
+              <option value="from-chip-to-expensive">По ценам от низких к высоким</option>
+              <option value="from-expensive-to-chip">По ценам от высоких к низким</option>
+              <option value="special-offers">Акции и скидки</option>
+            </select>
 
-          <span class="catalog-goods-price-select-title">Цена: 100 ₽ – 500 ₽</span>
-          <input type="range" min="0" max="1000" step="1" value="100">
+            <span class="catalog-goods-price-select-title">Цена: 100 ₽ – 500 ₽</span>
+            <input type="range" min="0" max="1000" step="1" value="100">
 
-          <fieldset class="catalog-filter-fat-content">
-            <legend class="catalog-filter-fat-content-title">Жирность</legend>
-            <ul class="catalog-filter-fat-content-list">
-              <li class="catalog-filter-fat-content-item">
-                <label class="select-item">
-                  <input class="select-item-input" type="radio" name="amount-of-fat" value="none">
-                  0%
-                </label>
-              </li>
-              <li class="catalog-filter-fat-content-item">
-                <label class="select-item">
-                  <input class="select-item-input" type="radio" name="amount-of-fat" value="less-then-10" checked>
-                  до 10%
-                </label>
-              </li>
-              <li class="catalog-filter-fat-content-item">
-                <label class="select-item">
-                  <input class="select-item-input" type="radio" name="amount-of-fat" value="less-then-30">
-                  до 30%
-                </label>
-              </li>
-              <li class="catalog-filter-fat-content-item">
-                <label class="select-item">
-                  <input class="select-item-input" type="radio" name="amount-of-fat" value="above-30">
-                  выше 30%
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="catalog-filter-fat-content">
+              <legend class="catalog-filter-fat-content-title">Жирность</legend>
+              <ul class="catalog-filter-fat-content-list">
+                <li class="catalog-filter-fat-content-item">
+                  <label class="select-item">
+                    <input class="select-item-input" type="radio" name="amount-of-fat" value="none">
+                    0%
+                  </label>
+                </li>
+                <li class="catalog-filter-fat-content-item">
+                  <label class="select-item">
+                    <input class="select-item-input" type="radio" name="amount-of-fat" value="less-then-10" checked>
+                    до 10%
+                  </label>
+                </li>
+                <li class="catalog-filter-fat-content-item">
+                  <label class="select-item">
+                    <input class="select-item-input" type="radio" name="amount-of-fat" value="less-then-30">
+                    до 30%
+                  </label>
+                </li>
+                <li class="catalog-filter-fat-content-item">
+                  <label class="select-item">
+                    <input class="select-item-input" type="radio" name="amount-of-fat" value="above-30">
+                    выше 30%
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-          <fieldset class="catalog-filter-icecream-toppings">
-            <legend class="catalog-filter-title">Наполнители:</legend>
-            <ul class="catalog-filter-icecream-toppings-list">
-              <li class="catalog-filter-icecream-toppings-item">
-                <label class="select">
-                  <input class="select-input" type="checkbox" name="chocolate" checked>
-                  шоколадные
-                </label>
-              </li>
-              <li class="catalog-filter-icecream-toppings-item">
-                <label class="select">
-                  <input class="select-input" type="checkbox" name="sugar" checked>
-                  сахарные посыпки
-                </label>
-              </li>
-              <li class="catalog-filter-icecream-toppings-item">
-                <label class="select">
-                  <input class="select-input" type="checkbox" name="fruits">
-                  фрукты
-                </label>
-              </li>
-              <li class="catalog-filter-icecream-toppings-item">
-                <label class="select">
-                  <input class="select-input" type="checkbox" name="syrops">
-                  сиропы
-                </label>
-              </li>
-              <li class="catalog-filter-icecream-toppings-item">
-                <label class="select">
-                  <input class="select-input" type="checkbox" name="jams">
-                  джемы
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="button" type="submit">Применить</button>
-        </form>
-      </div>
+            <fieldset class="catalog-filter-icecream-toppings">
+              <legend class="catalog-filter-title">Наполнители:</legend>
+              <ul class="catalog-filter-icecream-toppings-list">
+                <li class="catalog-filter-icecream-toppings-item">
+                  <label class="select">
+                    <input class="select-input" type="checkbox" name="chocolate" checked>
+                    шоколадные
+                  </label>
+                </li>
+                <li class="catalog-filter-icecream-toppings-item">
+                  <label class="select">
+                    <input class="select-input" type="checkbox" name="sugar" checked>
+                    сахарные посыпки
+                  </label>
+                </li>
+                <li class="catalog-filter-icecream-toppings-item">
+                  <label class="select">
+                    <input class="select-input" type="checkbox" name="fruits">
+                    фрукты
+                  </label>
+                </li>
+                <li class="catalog-filter-icecream-toppings-item">
+                  <label class="select">
+                    <input class="select-input" type="checkbox" name="syrops">
+                    сиропы
+                  </label>
+                </li>
+                <li class="catalog-filter-icecream-toppings-item">
+                  <label class="select">
+                    <input class="select-input" type="checkbox" name="jams">
+                    джемы
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button" type="submit">Применить</button>
+          </form>
+        </div>
       </section>
-      <section class="goods">
+      <section class="goods catalog-goods">
         <ul class="goods-list">
           <li class="goods-card">
             <a class="goods-card-link" href="#">
@@ -283,38 +283,42 @@
             <a class="goods-card-button button" href="#"><span class="visually-hidden">Купить</span></a>
           </li>
         </ul>
-        <button class="button pagination-show-more-goods" type="button">Показать ещё</button>
-
-        <ul class="goods-card-pagination">
-          <li class="goods-card-pagination-item">
-            <a class="pagination-link previous-page pagination-disabled">
-              <span class="visually-hidden">Предыдущая страница</span>
-            </a>
-          </li>
-          <li class="goods-card-pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="goods-card-pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="goods-card-pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="goods-card-pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="goods-card-pagination-item">
-            <a class="pagination-link" href="#">5</a>
-          </li>
-          <li class="goods-card-pagination-item">
-            <a class="pagination-link next-page" href="#">
-              <span class="visually-hidden">Следующая страница</span>
-            </a>
-          </li>
-        </ul>
       </section>
+
+        <div class="pagination-show-more-goods-wrapper">
+          <button class="button pagination-show-more-goods" type="button">Показать ещё</button>
+
+          <ul class="goods-card-pagination">
+            <li class="goods-card-pagination-item">
+              <a class="pagination-link previous-page pagination-disabled">
+                <span class="visually-hidden">Предыдущая страница</span>
+              </a>
+            </li>
+            <li class="goods-card-pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="goods-card-pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="goods-card-pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="goods-card-pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="goods-card-pagination-item">
+              <a class="pagination-link" href="#">5</a>
+            </li>
+            <li class="goods-card-pagination-item">
+              <a class="pagination-link next-page" href="#">
+                <span class="visually-hidden">Следующая страница</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
     </div>
-      </main>
+  </main>
 
   <footer class="page-footer">
     <div class="page-footer-wrapper">
