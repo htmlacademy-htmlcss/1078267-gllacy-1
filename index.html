@@ -18,7 +18,7 @@
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">Каталог</a>
-          <ul class="catalog-list">
+          <ul class="catalog-list visually-hidden">
             <li class="catalog-item catalog-new-products"><a class="catalog-item-link" href="#"><b>Новинки</b></a></li>
             <li class="catalog-item"><a class="catalog-item-link" href="#">Сливочное</a></li>
             <li class="catalog-item"><a class="catalog-item-link" href="#">Щербеты</a></li>
@@ -51,8 +51,9 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <img class="navigation-item-image" src="images/header/cart-black.svg" width="16" height="16" alt="Корзина.">
+          <a class="navigation-link cart" href="#">
+            <img class="navigation-item-image cart-item" src="images/header/cart-black.svg" width="16" height="16"
+              alt="Корзина.">
             <p><span class="visually-hidden">Нет товара</span><span>2 товара</span><span
                 class="visually-hidden">Корзина</span></p>
           </a>
@@ -64,32 +65,41 @@
   <main class="main-index main-wrapper">
     <div class="page-wrapper">
       <h1 class="visually-hidden">Интернет-магазин мороженного Глейси Шоп.</h1>
+
       <section class="slider">
         <h2 class="slider-title visually-hidden">Лучшие предложения магазина Глейси Шоп.</h2>
+
         <ul class="slider-list">
           <li class="slider-item">
-            <h3 class="slider-item-title">Нежный пломбир с клубничным джемом</h3>
-            <p class="slider-item-description">Натуральное мороженое из свежих сливок
-              и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-            <a class="button order-button" href="#">Заказать</a>
-            <img class="slider-image" src="images/slider/slider-product-1.png" width="327.15" height="507"
-              alt="Пломбир с клубничным джемом.">
+            <div class="slider-item-wrapper">
+              <h3 class="slider-item-title">Нежный пломбир с клубничным джемом</h3>
+              <p class="slider-item-description">Натуральное мороженое из свежих сливок
+                и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
+              <a class="button order-button" href="#">Заказать</a>
+            </div>
+            <div class="slider-image-wrapper">
+              <img class="slider-image" src="images/slider/slider-product-1.png" width="327.15" height="507"
+              alt="Пломбир с клубничным джемом."></div>
           </li>
           <li class="slider-item visually-hidden">
-            <h3 class="slider-item-title">Сливочное мороженое со вкусом банана</h3>
-            <p class="slider-item-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
-              наслаждение даже в самый жаркий летний день.</p>
-            <a class="button" href="#">Заказать</a>
-            <div class="slider-image-background"><img class="slider-image" src="images/slider/slider-product-2.png"
-                width="312" height="507" alt="Сливочное мороженое со вкусом банана."></div>
+            <div class="slider-item-wrapper">
+              <h3 class="slider-item-title">Сливочное мороженое со вкусом банана</h3>
+              <p class="slider-item-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
+                наслаждение даже в самый жаркий летний день.</p>
+              <a class="button order-button" href="#">Заказать</a>
+            </div>
+            <img class="slider-image" src="images/slider/slider-product-2.png" width="312" height="507"
+              alt="Сливочное мороженое со вкусом банана.">
           </li>
           <li class="slider-item visually-hidden">
+            <div class="slider-item-wrapper">
             <h3 class="slider-item-title">Карамельный пломбир с маршмеллоу</h3>
             <p class="slider-item-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира
               завоюет сердца сладкоежек всех возрастов.</p>
-            <a class="button" href="#">Заказать</a>
-            <div class="slider-image-background"><img class="slider-image" src="images/slider/slider-product-3.png"
-                width="350" height="507" alt="Карамельный пломбир с маршмеллоу."></div>
+            <a class="button order-button" href="#">Заказать</a>
+          </div>
+            <img class="slider-image" src="images/slider/slider-product-3.png" width="350" height="507"
+              alt="Карамельный пломбир с маршмеллоу.">
           </li>
         </ul>
         <button class="slider-button slider-prev" type="button">
@@ -117,7 +127,7 @@
             </button>
           </li>
         </ul>
-        <section class="social-media">
+        <section class="social-media social-media-slider">
           <h2 class="social-media-title visually-hidden">Магазин Глейси в социальных сетях</h2>
           <ul class="social-media-list">
             <li class="social-media-item">
@@ -145,23 +155,29 @@
         </section>
       </section>
 
-            <section class="special-offers">
+      <section class="special-offers">
         <h2 class="special-offers-title visually-hidden">Специальные предложения</h2>
-        <p class="special-offers-description"><b>Заказывайте мороженое и получайте подарки!</b></p>
+        <p class="special-offers-description"><b>Заказывайте мороженое <br> и получайте подарки!</b></p>
         <ul class="special-offers-list">
           <li class="special-offers-item">
-            <h3 class="special-offers-item-title">Малинка даром!</h3>
-            <p class="special-offers-item-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ
-              банку малинового варенья бесплатно.</p>
-            <a class="button" href="#">Хочу подарок</a>
+            <div class="special-offers-item-wrapper">
+              <h3 class="special-offers-item-title">Малинка даром!</h3>
+              <p class="special-offers-item-description">При покупке 2 кг любого фруктового мороженого добавим в ваш
+                заказ
+                банку малинового варенья бесплатно.</p>
+              <a class="button" href="#">Хочу подарок</a>
+            </div>
             <img class="special-offers-item-image" src="images/main/special-offers-image-1.png" width="219" height="268"
               alt="Малина.">
           </li>
           <li class="special-offers-item">
-            <h3 class="special-offers-item-title">Маршмеллоу даром!</h3>
-            <p class="special-offers-item-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных
-              зефирок совершенно бесплатно.</p>
-            <a class="button" href="#">Хочу подарок</a>
+            <div class="special-offers-item-wrapper">
+              <h3 class="special-offers-item-title">Маршмеллоу даром!</h3>
+              <p class="special-offers-item-description">При покупке 2 кг пломбира добавим <br>в ваш заказ упаковку
+                нежных
+                зефирок совершенно бесплатно.</p>
+              <a class="button" href="#">Хочу подарок</a>
+            </div>
             <img class="special-offers-item-image" src="images/main/special-offers-image-2.png" width="219" height="268"
               alt="Маршмеллоу.">
           </li>
@@ -182,7 +198,7 @@
               <p class="goods-card-descriprion">Сливочное мороженое с малиновым джемом</p>
             </a>
             <b class="goods-card-price">310 ₽/кг</b>
-            <button class="button goods-card-button" type="button"><span class="visually-hidden">Добавить в
+            <button class="button goods-card-button" type="button"><img src="images/main/cart-white.svg" alt="Добавить в корзину"> <span class="visually-hidden">Добавить в
                 корзину</span></button>
           </li>
           <li class="goods-card">
@@ -193,7 +209,7 @@
               <p class="goods-card-descriprion">Фисташковый пломбир с кусочками шоколада</p>
             </a>
             <b class="goods-card-price">340 ₽/кг</b>
-            <button class="button goods-card-button" type="button"><span class="visually-hidden">Добавить в
+            <button class="button goods-card-button" type="button"><img src="images/main/cart-white.svg" alt="Добавить в корзину"> <span class="visually-hidden">Добавить в
                 корзину</span></button>
           </li>
           <li class="goods-card">
@@ -204,7 +220,7 @@
               <p class="goods-card-descriprion">Крем-брюле с черничным джемом</p>
             </a>
             <b class="goods-card-price">330 ₽/кг</b>
-            <button class="button goods-card-button" type="button"><span class="visually-hidden">Добавить в
+            <button class="button goods-card-button" type="button"><img src="images/main/cart-white.svg" alt="Добавить в корзину"> <span class="visually-hidden">Добавить в
                 корзину</span></button>
           </li>
           <li class="goods-card">
@@ -215,7 +231,7 @@
               <p class="goods-card-descriprion">Ванильный пломбир со сладкой посыпкой</p>
             </a>
             <b class="goods-card-price">320 ₽/кг</b>
-            <button class="button goods-card-button" type="button"><span class="visually-hidden">Добавить в
+            <button class="button goods-card-button" type="button"><img src="images/main/cart-white.svg" alt="Добавить в корзину"> <span class="visually-hidden">Добавить в
                 корзину</span></button>
           </li>
         </ul>
