@@ -9,6 +9,7 @@
 
 <body>
   <header class="page-header page-header-catalog">
+
     <nav class="navigation">
       <a class="navigation-logo">
         <img class=page-header-logo src="images/header/logo.svg" width="137" height="55.72"
@@ -17,7 +18,7 @@
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">Каталог</a>
-          <ul class="catalog-list">
+          <ul class="catalog-list visually-hidden">
             <li class="catalog-item catalog-new-products"><a class="catalog-item-link" href="#"><b>Новинки</b></a></li>
             <li class="catalog-item"><a class="catalog-item-link" href="#">Сливочное</a></li>
             <li class="catalog-item"><a class="catalog-item-link" href="#">Щербеты</a></li>
@@ -50,8 +51,9 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <img class="navigation-item-image" src="images/header/cart-black.svg" width="16" height="16" alt="Корзина.">
+          <a class="navigation-link cart" href="#">
+            <img class="navigation-item-image cart-item" src="images/header/cart-black.svg" width="16" height="16"
+              alt="Корзина.">
             <p><span class="visually-hidden">Нет товара</span><span>2 товара</span><span
                 class="visually-hidden">Корзина</span></p>
           </a>
@@ -63,7 +65,7 @@
   <main class="main-catalog main-wrapper">
     <div class="page-wrapper">
       <header class="catalog-header">
-        <h1 class="catalog-header-title visually-hidden">Каталог</h1>
+        <h1 class="catalog-header-title visually-hidden">Меню сайта</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -75,21 +77,28 @@
             <a class="breadcrumbs-link breadcrumbs-link-current">Сливочное мороженное</a>
           </li>
         </ul>
-        </header>
+      </header>
       <section class="catalog-goods-filter">
         <h2 class="catalog-goods-title">Сливочное мороженое</h2>
-        <div class="catalog-filter-wrapper">
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <span class="catalog-goods-select-title">Сортировка</span>
-            <select class="catalog-goods-select-list" aria-label="Сортировка">
-              <option value="popular" selected>По популярности</option>
-              <option value="from-chip-to-expensive">По ценам от низких к высоким</option>
-              <option value="from-expensive-to-chip">По ценам от высоких к низким</option>
-              <option value="special-offers">Акции и скидки</option>
-            </select>
 
-            <span class="catalog-goods-price-select-title">Цена: 100 ₽ – 500 ₽</span>
-            <input type="range" min="0" max="1000" step="1" value="100">
+        <div class="catalog-filter-wrapper">
+
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="catalog-goods-select-wrapper">
+              <span class="catalog-goods-select-title">Сортировка</span>
+              <select class="catalog-goods-select-list" aria-label="Сортировка">
+                <option value="popular" selected>По популярности</option>
+                <option value="from-chip-to-expensive">По ценам от низких к высоким</option>
+                <option value="from-expensive-to-chip">По ценам от высоких к низким</option>
+                <option value="special-offers">Акции и скидки</option>
+              </select>
+            </div>
+
+            <div class="catalog-goods-price-select-wrapper">
+              <span class="catalog-goods-price-select-title">Цена: 100 ₽ – 500 ₽</span>
+              <input type="range" min="0" max="1000" step="1" value="100">
+            </div>
+
 
             <fieldset class="catalog-filter-fat-content">
               <legend class="catalog-filter-fat-content-title">Жирность</legend>
@@ -120,6 +129,8 @@
                 </li>
               </ul>
             </fieldset>
+
+
 
             <fieldset class="catalog-filter-icecream-toppings">
               <legend class="catalog-filter-title">Наполнители:</legend>
@@ -156,12 +167,14 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit">Применить</button>
+            <button class="button catalog-filter-button" type="submit">Применить</button>
           </form>
+
+
         </div>
       </section>
-      <section class="goods catalog-goods">
-        <ul class="goods-list">
+      <section class="goods">
+        <ul class="goods-list ">
           <li class="goods-card">
             <a class="goods-card-link" href="#">
               <img class="goods-card-image" src="images/catalog/catalog-product-1.jpg" width="168" height="168"
@@ -169,8 +182,13 @@
               <h3 class="goods-card-title">Малинка</h3>
               <p class="goods-card-description">Сливочное мороженое с малиновым джемом</p>
             </a>
-            <b class="goods-card-price">310 ₽/кг</b>
-            <a class="goods-card-button button" href="#"><span class="visually-hidden">Купить</span></a>
+            <div class="goods-card-order">
+              <b class="goods-card-price">310 ₽/кг</b>
+              <button class="button goods-card-button" type="button"><img src="images/main/cart-white.svg"
+                  alt="Добавить в корзину"> <span class="visually-hidden">Добавить в
+                  корзину</span></button>
+            </div>
+
           </li>
           <li class="goods-card">
             <a class="goods-card-link" href="#">
@@ -179,8 +197,13 @@
               <h3 class="goods-card-title">Фисташка</h3>
               <p class="goods-card-description">Фисташковый пломбир с кусочками шоколада</p>
             </a>
-            <b class="goods-card-price">340 ₽/кг</b>
-            <a class="goods-card-button button" href="#"><span class="visually-hidden">Купить</span></a>
+            <div class="goods-card-order">
+              <b class="goods-card-price">340 ₽/кг</b>
+              <button class="button goods-card-button" type="button"><img src="images/main/cart-white.svg"
+                  alt="Добавить в корзину"> <span class="visually-hidden">Добавить в
+                  корзину</span></button>
+            </div>
+
           </li>
           <li class="goods-card">
             <a class="goods-card-link" href="#">
@@ -189,8 +212,12 @@
               <h3 class="goods-card-title">Черника</h3>
               <p class="goods-card-description">Крем-брюле с черничным джемом</p>
             </a>
-            <b class="goods-card-price">330 ₽/кг</b>
-            <a class="goods-card-button button" href="#"><span class="visually-hidden">Купить</span></a>
+            <div class="goods-card-order">
+              <b class="goods-card-price">330 ₽/кг</b>
+              <button class="button goods-card-button" type="button"><img src="images/main/cart-white.svg"
+                  alt="Добавить в корзину"> <span class="visually-hidden">Добавить в
+                  корзину</span></button>
+            </div>
           </li>
           <li class="goods-card">
             <a class="goods-card-link" href="#">
@@ -199,8 +226,12 @@
               <h3 class="goods-card-title">Бабл-гам</h3>
               <p class="goods-card-description">Ванильный пломбир со сладкой посыпкой</p>
             </a>
-            <b class="goods-card-price">320 ₽/кг</b>
-            <a class="goods-card-button button" href="#"><span class="visually-hidden">Купить</span></a>
+            <div class="goods-card-order"><b class="goods-card-price">320 ₽/кг</b>
+              <button class="button goods-card-button" type="button"><img src="images/main/cart-white.svg"
+                  alt="Добавить в корзину"> <span class="visually-hidden">Добавить в
+                  корзину</span></button>
+            </div>
+
           </li>
           <li class="goods-card">
             <a class="goods-card-link" href="#">
@@ -209,8 +240,12 @@
               <h3 class="goods-card-title">Ежевика</h3>
               <p class="goods-card-description">Сливочное мороженое с ежевичным джемом</p>
             </a>
-            <b class="goods-card-price">330 ₽/кг</b>
-            <a class="goods-card-button button" href="#"><span class="visually-hidden">Купить</span></a>
+            <div class="goods-card-order"><b class="goods-card-price">330 ₽/кг</b>
+              <button class="button goods-card-button" type="button"><img src="images/main/cart-white.svg"
+                  alt="Добавить в корзину"> <span class="visually-hidden">Добавить в
+                  корзину</span></button>
+            </div>
+
           </li>
           <li class="goods-card">
             <a class="goods-card-link" href="#">
@@ -219,8 +254,12 @@
               <h3 class="goods-card-title">Банан</h3>
               <p class="goods-card-description">Сливочный пломбир с банановым вкусом</p>
             </a>
-            <b class="goods-card-price">340 ₽/кг</b>
-            <a class="goods-card-button button" href="#"><span class="visually-hidden">Купить</span></a>
+            <div class="goods-card-order"><b class="goods-card-price">340 ₽/кг</b>
+              <button class="button goods-card-button" type="button"><img src="images/main/cart-white.svg"
+                  alt="Добавить в корзину"> <span class="visually-hidden">Добавить в
+                  корзину</span></button>
+            </div>
+
           </li>
           <li class="goods-card">
             <a class="goods-card-link" href="#">
@@ -229,8 +268,13 @@
               <h3 class="goods-card-title">Шоколадка</h3>
               <p class="goods-card-description">Классический шоколадный пломбир</p>
             </a>
-            <b class="goods-card-price">270 ₽/кг</b>
-            <a class="goods-card-button button" href="#"><span class="visually-hidden">Купить</span></a>
+            <div class="goods-card-order">
+              <b class="goods-card-price">270 ₽/кг</b>
+              <button class="button goods-card-button" type="button"><img src="images/main/cart-white.svg"
+                  alt="Добавить в корзину"> <span class="visually-hidden">Добавить в
+                  корзину</span></button>
+            </div>
+
           </li>
           <li class="goods-card">
             <a class="goods-card-link" href="#">
@@ -239,90 +283,116 @@
               <h3 class="goods-card-title">Клубничка</h3>
               <p class="goods-card-description">Сливочный пломбир с клубничным вкусом</p>
             </a>
-            <b class="goods-card-price">300 ₽/кг</b>
-            <a class="goods-card-button button" href="#"><span class="visually-hidden">Купить</span></a>
+            <div class="goods-card-order">
+              <b class="goods-card-price">300 ₽/кг</b>
+              <button class="button goods-card-button" type="button"><img src="images/main/cart-white.svg"
+                  alt="Добавить в корзину"> <span class="visually-hidden">Добавить в
+                  корзину</span></button>
+            </div>
+
           </li>
-          <li class="goods-card">
+
+          <li class="goods-card last-row">
             <a class="goods-card-link" href="#">
               <img class="goods-card-image" src="images/catalog/catalog-product-9.jpg" width="168" height="168"
                 alt="Лимонный сорбет.">
               <h3 class="goods-card-title">Лимон</h3>
               <p class="goods-card-description">Освежающий лимонный сорбет</p>
             </a>
-            <b class="goods-card-price">310 ₽/кг</b>
-            <a class="goods-card-button button" href="#"><span class="visually-hidden">Купить</span></a>
+            <div class="goods-card-order">
+              <b class="goods-card-price">310 ₽/кг</b>
+              <button class="button goods-card-button" type="button"><img src="images/main/cart-white.svg"
+                  alt="Добавить в корзину"> <span class="visually-hidden">Добавить в
+                  корзину</span></button>
+            </div>
+
           </li>
-          <li class="goods-card">
+          <li class="goods-card last-row">
             <a class="goods-card-link" href="#">
               <img class="goods-card-image" src="images/catalog/catalog-product-10.jpg" width="168" height="168"
                 alt="Мороженное с ментолом.">
               <h3 class="goods-card-title">Ментол</h3>
               <p class="goods-card-description">Сливочный пломбир с ментоловым сиропом</p>
             </a>
-            <b class="goods-card-price">320 ₽/кг</b>
-            <a class="goods-card-button button" href="#"><span class="visually-hidden">Купить</span></a>
+            <div class="goods-card-order">
+              <b class="goods-card-price">320 ₽/кг</b>
+              <button class="button goods-card-button" type="button"><img src="images/main/cart-white.svg"
+                  alt="Добавить в корзину"> <span class="visually-hidden">Добавить в
+                  корзину</span></button>
+            </div>
+
           </li>
-          <li class="goods-card">
+          <li class="goods-card last-row">
             <a class="goods-card-link" href="#">
               <img class="goods-card-image" src="images/catalog/catalog-product-11.jpg" width="168" height="168"
                 alt="Ореховое мороженное.">
               <h3 class="goods-card-title">Орешек</h3>
               <p class="goods-card-description">Фисташковый пломбир с шоколадным сиропом</p>
             </a>
-            <b class="goods-card-price">360 ₽/кг</b>
-            <a class="goods-card-button button" href="#"><span class="visually-hidden">Купить</span></a>
+            <div class="goods-card-order">
+              <b class="goods-card-price">360 ₽/кг</b>
+            <button class="button goods-card-button" type="button"><img src="images/main/cart-white.svg"
+                alt="Добавить в корзину"> <span class="visually-hidden">Добавить в
+                корзину</span></button>
+            </div>
+
           </li>
-          <li class="goods-card">
+          <li class="goods-card last-row">
             <a class="goods-card-link" href="#">
               <img class="goods-card-image" src="images/catalog/catalog-product-12.jpg" width="168" height="168"
                 alt="Мороженное крем-брюле.">
               <h3 class="goods-card-title">Крем-брюле</h3>
               <p class="goods-card-description">Классическое крем-брюле</p>
             </a>
-            <b class="goods-card-price">280 ₽/кг</b>
-            <a class="goods-card-button button" href="#"><span class="visually-hidden">Купить</span></a>
+            <div class="goods-card-order">
+              <b class="goods-card-price">280 ₽/кг</b>
+            <button class="button goods-card-button" type="button"><img src="images/main/cart-white.svg"
+                alt="Добавить в корзину"> <span class="visually-hidden">Добавить в
+                корзину</span></button>
+            </div>
+
           </li>
         </ul>
       </section>
 
-        <div class="pagination-show-more-goods-wrapper">
-          <button class="button pagination-show-more-goods" type="button">Показать ещё</button>
+      <div class="pagination-show-more-goods-wrapper">
+        <button class="button pagination-show-more-goods" type="button">Показать ещё</button>
 
-          <ul class="goods-card-pagination">
-            <li class="goods-card-pagination-item">
-              <a class="pagination-link previous-page pagination-disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
-            <li class="goods-card-pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="goods-card-pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="goods-card-pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="goods-card-pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="goods-card-pagination-item">
-              <a class="pagination-link" href="#">5</a>
-            </li>
-            <li class="goods-card-pagination-item">
-              <a class="pagination-link next-page" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="goods-card-pagination">
+          <li class="goods-card-pagination-item">
+            <a class="pagination-link previous-page pagination-disabled">
+              <span class="visually-hidden">Предыдущая страница</span>
+            </a>
+          </li>
+          <li class="goods-card-pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="goods-card-pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="goods-card-pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="goods-card-pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="goods-card-pagination-item">
+            <a class="pagination-link" href="#">5</a>
+          </li>
+          <li class="goods-card-pagination-item">
+            <a class="pagination-link next-page" href="#">
+              <span class="visually-hidden">Следующая страница</span>
+            </a>
+          </li>
+        </ul>
+      </div>
 
     </div>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer-wrapper">
-      <section class="social-media">
+      <section class="social-media social-media-footer">
         <h2 class="social-media-title visually-hidden">Магазин Глейси в социальных сетях</h2>
         <ul class="social-media-list social-media-list-footer">
           <li class="social-media-item">
@@ -352,10 +422,18 @@
       <section class="footer-additional-info">
         <h2 class="footer-additional-info-title visually-hidden">Дополнительная информация о компании</h2>
         <ul class="footer-additional-info-list">
-          <li><a class="footer-additional-info-link for-suppliers" href="#"><b>Для поставщиков</b></a></li>
-          <li><a class="footer-additional-info-link" href="#">Наши документы</a></li>
-          <li><a class="footer-additional-info-link" href="#">О производстве</a></li>
-          <li><a class="footer-additional-info-link" href="#">Экологические стандарты</a></li>
+          <div class="footer-additional-info-item-wrapper">
+            <li class="footer-additional-info-item"><a class="footer-additional-info-link for-suppliers" href="#"><b>Для
+                  поставщиков</b></a></li>
+            <li class="footer-additional-info-item"><a class="footer-additional-info-link" href="#">Наши документы</a>
+            </li>
+          </div>
+          <div class="footer-additional-info-item-wrapper">
+            <li class="footer-additional-info-item"><a class="footer-additional-info-link" href="#">О производстве</a>
+            </li>
+            <li class="footer-additional-info-item"><a class="footer-additional-info-link" href="#">Экологические
+                стандарты</a></li>
+          </div>
         </ul>
       </section>
 

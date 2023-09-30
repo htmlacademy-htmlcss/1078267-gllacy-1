@@ -279,7 +279,7 @@ left: 0;
   margin-right: 16px;
 }
 
-.social-media-item::nth-child(3n) {
+.social-media-item:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -367,6 +367,15 @@ left: 0;
   max-width: 270px;
   border-radius: 8px;
   background-color: #fcfcfc;
+  margin-bottom: 40px;
+}
+
+.last-row {
+  margin-bottom: 0;
+}
+
+.main-goods-card {
+  margin-bottom: 0;
 }
 
 .goods-card-link {
@@ -461,7 +470,7 @@ left: 0;
   margin-bottom: 40px;
 }
 
-.about-company-advantages-item::nth-child(2n) {
+.about-company-advantages-item:nth-child(2n) {
   margin-right: 0;
   margin-bottom: 0;
 }
@@ -725,7 +734,7 @@ left: 0;
   margin: 0 auto;
 }
 
-.footer-additional-info-list{
+.footer-additional-info-list {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -746,7 +755,6 @@ left: 0;
   color: #2d3440;
   text-decoration: none;
 }
-
 
 .for-suppliers {
   font-weight: 700;
@@ -782,14 +790,24 @@ left: 0;
 
 .catalog-header {
   display: flex;
-  width: 379px;
+  max-width: 379px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
 }
 
 .breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
+}
+
+.breadcrumbs-item {
+  margin-right: 28px;
+}
+
+.breadcrumbs-item.social-media-item:last-child {
+  margin-right: 0;
 }
 
 .breadcrumbs-link {
@@ -804,25 +822,79 @@ left: 0;
   text-decoration: underline;
 }
 
-.catalog-goods-title {
-  font-size: 32px;
-  font-weight: 900;
-  line-height: 46px;
-  margin: 0;
-  padding: 0;
-}
-
 .catalog-goods-filter {
   display: flex;
+  flex-direction: column;
   width: 1170px;
   margin: 0;
   margin-bottom: 44px;
   font-size: 14px;
   line-height: 20px;
 }
-.catalog-filter-wrapper {
-  width: 823px;
+
+.catalog-goods-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
   margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.catalog-filter-wrapper {
+  max-width: 823px;
+  margin: 0;
+  margin-bottom: 44px;
+}
+
+.catalog-filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-goods-select-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 196px;
+  margin-right: 24px;
+}
+
+.catalog-goods-price-select-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 196px;
+  margin-right: 24px;
+}
+
+.catalog-filter-fat-content {
+  display: flex;
+  flex-direction: column;
+  min-width: 383px;
+}
+
+.catalog-goods-select-title,
+.catalog-goods-price-select-title,
+.catalog-filter-fat-content-title {
+  margin-bottom: 8px;
+}
+
+.catalog-filter-fat-content-list {
+  display: flex;
+}
+
+.catalog-filter-icecream-toppings {
+  display: flex;
+  flex-direction: column;
+  min-width: 604px;
+  margin-right: 16px;
+}
+
+.catalog-filter-icecream-toppings-list {
+  display: flex;
+}
+
+.catalog-filter-button {
+  margin: 46px 16px 0 0;
 }
 
 .catalog-goods {
@@ -836,12 +908,25 @@ left: 0;
   margin-bottom: 40px;
 }
 
-.goods-card-pagination {
-  margin: 0;
-  padding: 0;
+.pagination-show-more-goods {
+  swidth: 179px;
+  margin: 41px 335px 41px auto;
 }
+
+.goods-card-pagination {
+  display: flex;
+  margin: ;in-width: 168px;
+  margin: 51px 0;
+}
+
+.goods-card-pagination-item {
+  min-width: 24px;
+  text-align: center;
+}
+
 .pagination-link {
   line-height: 20px;
   color: #2d3440;
   text-decoration: none;
+
 }
