@@ -575,14 +575,12 @@ left: 0;
   padding: 0;
 }
 
-
 .field {
   width: 332px;
   height: 48px;
   border-radius: 4px;
   border: 1px solid #b9b9b9;
   background-color: #fff;
-
 }
 
 /* доставка */
@@ -700,7 +698,6 @@ left: 0;
   background: url("../images/main/contacts-background.jpg") no-repeat;
   background-size: cover;
   border-radius: 16px;
-
 }
 
 .contacts-wrapper {
@@ -711,8 +708,7 @@ left: 0;
   margin: 0;
   padding: 64px 763px 64px 64px;
   margin: 0;
-
-  }
+}
 
 .contacts-conteiner {
   padding: 40px;
@@ -951,6 +947,10 @@ left: 0;
   justify-content: space-evenly;
 }
 
+.catalog-filter-button {
+margin-top: auto;
+}
+
 .catalog-goods {
   margin: 0;
   margin-bottom: 16px;
@@ -977,13 +977,11 @@ left: 0;
   width: 168px;
   margin: 0;
   padding: 0;
-
 }
 
 .goods-card-pagination-item {
   min-width: 24px;
   text-align: center;
-
 }
 
 .pagination-link {
