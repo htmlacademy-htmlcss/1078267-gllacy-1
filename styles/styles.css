@@ -93,8 +93,8 @@ body {
 }
 
 .goods-card-button {
-  max-width: 32px;
-  max-height: 32px;
+  width: 32px;
+  height: 32px;
   background: #ff2f64 no-repeat;
   border-radius: 50%;
   border: none;
@@ -284,14 +284,14 @@ left: 0;
 .social-media-list {
   display: flex;
   justify-content: space-between;
-  min-width: 104px;
+  width: 104px;
   margin: 0;
   padding: 0;
 }
 
 .social-media-item {
-  min-width: 24px;
-  min-height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 /* спец предложения */
@@ -337,13 +337,12 @@ left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 317px;
+  width: 317px;
   margin: 0;
   padding: 36px 0 36px 36px;
 }
 
 .special-offers-item-title {
-  min-width: 434px;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -367,26 +366,24 @@ left: 0;
 .goods-description {
   margin: 0;
   padding: 0;
-  margin-bottom: 56px;
+  margin-bottom: 107px;
 }
 
 .goods-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  row-gap: 40px;
+  row-gap: 91px;
   margin: 0;
   padding: 0;
 }
 
 .goods-card {
-  max-width: 270px;
+  width: 270px;
   border-radius: 8px;
   background-color: #fcfcfc;
-}
-
-.goods-card-wrapper {
-  padding: 0 40px 24px 40px;
+  padding: 0 40px 24px;
+  box-sizing: border-box;
 }
 
 .goods-card-link {
@@ -403,6 +400,7 @@ left: 0;
 .goods-card-image {
   border-radius: 50%;
   margin-bottom: 16px;
+  margin-top: -51px;
 }
 
 .goods-card-name {
@@ -512,8 +510,12 @@ left: 0;
   background-size: cover;
   border-radius: 16px;
   margin: 0;
-  padding: 32.59px 235px 67.15px 32px;
+  padding: 32px;
   box-sizing: border-box;
+}
+
+.adittional-wrapper {
+  width: 303px;
 }
 
 .additional-title {
@@ -569,7 +571,6 @@ left: 0;
 
 .news-form {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -583,17 +584,23 @@ left: 0;
   background-color: #fff;
 }
 
+.news-button {
+  margin-left: auto;
+}
+
 /* доставка */
 
 .delivery {
   display: flex;
   align-items: center;
-  width: 1170px;
+  justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 80px;
   background: url("../images/main/delivery-background.jpg") no-repeat;
   background-size: cover;
   border-radius: 16px;
+  padding: 64px;
+  padding-left: 100px;
 }
 
 .delivery-description-wrapper {
@@ -601,8 +608,7 @@ left: 0;
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding: 167px 150px 163px 100px;
-  min-width: 371px;
+  width: 371px;
 }
 
 .delivery-description-title {
@@ -616,7 +622,7 @@ left: 0;
 }
 
 .delivery-description {
-  max-width: 371px;
+  width: 371px;
   margin: 0;
   padding: 0;
   color: #565c66;
@@ -625,7 +631,6 @@ left: 0;
 .delivery-order {
   width: 500px;
   margin: 0;
-  padding: 64px 64px 64px 0;
 }
 
 .delivery-order-wrapper {
@@ -671,12 +676,14 @@ left: 0;
   display: flex;
   flex-direction: column;
   width: 117px;
+  margin: 0;
 }
 
 .delivery-order-phone {
   display: flex;
   flex-direction: column;
   width: 287px;
+  margin: 0;
 }
 
 .delivery-order-address {
@@ -706,7 +713,7 @@ left: 0;
   align-items: right;
 
   margin: 0;
-  padding: 64px 763px 64px 64px;
+  padding: 64px;
   margin: 0;
 }
 
@@ -785,15 +792,8 @@ left: 0;
   padding-bottom: 48px;
 }
 
-.social-media-footer {
-  margin-right: 259px;
-}
-
 .footer-additional-info {
   width: 356px;
-  margin: 0 auto;
-  margin-bottom: 9px;
-  padding: 0;
 }
 
 .footer-additional-info-list {
@@ -828,12 +828,12 @@ left: 0;
   display: flex;
   flex-direction: column;
   margin: 0;
-  margin-left: auto;
   padding: 0;
 }
 
 .footer-made-by-link {
-  max-width: 93px;
+  width: 93px;
+  margin-bottom: 14px;
 }
 
 .footer-made-by-text {
@@ -884,7 +884,7 @@ left: 0;
   flex-direction: column;
   width: 1170px;
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 95px;
   padding: 0;
   font-size: 14px;
   line-height: 20px;
@@ -900,16 +900,13 @@ left: 0;
 }
 
 .catalog-filter-wrapper {
-  margin: 0;
-  padding: 0;
-}
-
-.catalog-filter {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   width: 823px;
+  margin-bottom: 16px;
 }
+
+
 
 .catalog-goods-select-wrapper {
   display: flex;
@@ -924,6 +921,8 @@ left: 0;
 .catalog-filter-fat-content {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-goods-select-title,
@@ -935,20 +934,34 @@ left: 0;
 .catalog-filter-fat-content-list {
   display: flex;
   justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
 }
+
+
+.catalog-filter-icecream-toppings-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 823px;
+}
+
 
 .catalog-filter-icecream-toppings {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-filter-icecream-toppings-list {
   display: flex;
   justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-filter-button {
-margin-top: auto;
+  margin-top: auto;
 }
 
 .catalog-goods {
@@ -980,7 +993,7 @@ margin-top: auto;
 }
 
 .goods-card-pagination-item {
-  min-width: 24px;
+  width: 24px;
   text-align: center;
 }
 
