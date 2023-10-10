@@ -803,13 +803,23 @@ left: 0;
 }
 
 .footer-additional-info-list {
+display: grid;
+grid-template-columns: max-content max-content;
+column-gap: 24px;
+row-gap: 8px;
+margin: 0;
+padding: 0;
+
+}
+
+/* .footer-additional-info-list {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   column-gap: 24px;
   margin: 0;
   padding: 0;
-}
+} */
 
 .footer-additional-info-item {
   margin: 0;
@@ -828,7 +838,7 @@ left: 0;
 
 .for-suppliers {
   font-weight: 700;
-}
+ }
 
 .footer-made-by {
   display: flex;
