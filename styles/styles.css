@@ -1084,7 +1084,6 @@ left: 0;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-
 }
 
 .delivery-order-date {
@@ -1094,7 +1093,7 @@ left: 0;
   flex-direction: column;
   /* width: 117px; */
   margin: 0;
-  background-image: url('../images/main/info.svg');
+  background-image: url("../images/main/info.svg");
   background-repeat: no-repeat;
   background-size: 14px 14px;
   background-position: top 3px left 44px;
@@ -1121,7 +1120,7 @@ left: 0;
   /* width: 420px; */
   margin: 0;
   margin-bottom: 32px;
-  background-image: url('../images/main/info.svg');
+  background-image: url("../images/main/info.svg");
   background-repeat: no-repeat;
   background-size: 14px 14px;
   background-position: top 3px left 56px;
@@ -1301,6 +1300,18 @@ left: 0;
   padding: 0;
 }
 
+.breadcrumbs-item {
+  padding-right: 16px;
+  background-image: url("../images/catalog/arrow-dubble.svg");
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+  background-position: center right;
+}
+
+.breadcrumbs-item:last-child {
+  background-image: none;
+}
+
 .breadcrumbs-link {
   display: block;
   font-size: 14px;
@@ -1310,16 +1321,20 @@ left: 0;
   text-decoration: none;
   margin: 0;
   padding: 0;
-  padding-right: 16px;
-  background-image: url("../images/catalog/arrow-dubble.svg");
-  background-repeat: no-repeat;
-  background-size: 8px 8px;
-  background-position: center right;
 }
 
 .breadcrumbs-link-current {
-  text-decoration: underline;
-  background-image: none;
+  position: relative;
+}
+
+.breadcrumbs-link-current::after {
+position: absolute;
+content: "";
+right: 0;
+left: 0;
+bottom: 0;
+height: 1px;
+background-color: #2d3440;
 }
 
 /* фильтр */
