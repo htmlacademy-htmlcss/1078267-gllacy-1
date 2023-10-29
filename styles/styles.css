@@ -1084,15 +1084,29 @@ left: 0;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+
 }
 
 .delivery-order-date {
   display: flex;
+  /* position: relative; */
   align-self: flex-start;
   flex-direction: column;
-  width: 117px;
+  /* width: 117px; */
   margin: 0;
+  background-image: url('../images/main/info.svg');
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: top 3px left 44px;
 }
+
+/* .delivery-order-date::after {
+  position: absolute;
+  content: '';
+  background-image: url('../images/main/info.svg');
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+} */
 
 .delivery-order-phone {
   display: flex;
@@ -1104,9 +1118,13 @@ left: 0;
 .delivery-order-address {
   display: flex;
   flex-direction: column;
-  width: 420px;
+  /* width: 420px; */
   margin: 0;
   margin-bottom: 32px;
+  background-image: url('../images/main/info.svg');
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: top 3px left 56px;
 }
 
 .delivery-order-button {
@@ -1479,6 +1497,7 @@ left: 0;
   background-repeat: no-repeat;
   background-size: 6px 11px;
   background-position: center left 8px;
+  opacity: 0.3;
 }
 
 .next-page {
