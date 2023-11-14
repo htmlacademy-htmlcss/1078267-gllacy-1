@@ -1108,6 +1108,12 @@ body {
   line-height: 20px;
 }
 
+.field:required {
+  outline: 1px solid #b9b9b9;
+  border: none;
+  background-color: #fff;
+}
+
 .field:hover {
   color: #2d3440;
   outline-color: #2d3440;
@@ -1151,6 +1157,12 @@ body {
 
 .field::placeholder {
   color: #b9b9b9;
+}
+
+.field:required {
+  outline: 1px solid #b9b9b9;
+  border: none;
+  background-color: #fff;
 }
 
 .subscribe {
@@ -1667,9 +1679,15 @@ body {
 .price-and-range {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   padding: 0 16px 8px;
 }
 
+.catalog-filter-price-title {
+  margin: 0;
+  padding: 0;
+
+}
 .range-wrapper-inputs {
   display: flex;
   justify-content: center;
