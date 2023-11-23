@@ -50,8 +50,6 @@ body {
   flex-direction: column;
   min-height: 100%;
   min-width: 1170px;
-  /* padding-left: 98px;
-  padding-right: 98px; */
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -139,7 +137,7 @@ body {
   padding: 0;
   cursor: pointer;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .slider-button:hover {
@@ -359,7 +357,7 @@ body {
   width: 185px;
   margin: 0 16px;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   border: none;
   text-align: center;
   font-family: "Inter", sans-serif;
@@ -411,8 +409,6 @@ body {
   list-style-type: none;
 }
 
-/*Хэдер*/
-
 .navigation {
   width: 1170px;
   margin: 0 auto;
@@ -424,8 +420,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   margin: 0;
@@ -458,8 +454,8 @@ body {
 .navigation-item {
   position: relative;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .navigation-link {
@@ -506,8 +502,32 @@ body {
   background-position: center right 16px;
 }
 
+.catalog-link:hover {
+  background-color: rgba(255, 74, 120, 0.6);
+  border-radius: 30px;
+  background-image: url("../images/header/arrow-up.svg");
+  outline: none;
+  color: #fcfcfc;
+}
+
+.catalog-link:focus {
+  background-color: #ff4a78;
+  border-radius: 30px;
+  background-image: url("../images/header/arrow-up.svg");
+  outline: 2px solid #000;
+  color: #fcfcfc;
+}
+
 .catalog-link:focus-within {
   background-color: #ff4a78;
+  border-radius: 30px;
+  background-image: url("../images/header/arrow-up.svg");
+  outline: 2px solid #000;
+  color: #fcfcfc;
+}
+
+.catalog-link:hover {
+  background-color: rgba(255, 74, 120, 0.3);
   border-radius: 30px;
   background-image: url("../images/header/arrow-up.svg");
   outline: none;
@@ -545,7 +565,7 @@ body {
 }
 
 .navigation-user .navigation-item {
-  padding-right: 16px;
+  padding-right: 6px;
 }
 
 .navigation-user .navigation-item:last-child {
@@ -581,14 +601,14 @@ body {
   text-align: center;
   color: #2d3440;
   text-decoration: none;
-  padding: 10px 4px 8px 0;
+  padding: 10px 5px 8px 0;
 }
 
 .navigation-user .search {
   display: block;
   height: 30px;
   width: 30px;
-  padding: 8px 14px 8px 0;
+  padding: 8px 16px 8px 16px;
 }
 
 .navigation-user .log-in,
@@ -607,17 +627,17 @@ body {
 }
 
 .search .navigation-item-image {
-  left: 5px;
+  left: 7px;
   top: 7px;
 }
 
 .log-in .navigation-item-image {
-  left: 14px;
+  left: 19px;
   top: 7px;
 }
 
 .cart .navigation-item-image {
-  left: 14px;
+  left: 20px;
   top: 8px;
 }
 
@@ -625,8 +645,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/*main*/
 
 .main-wrapper {
   -webkit-box-flex: 1;
@@ -638,8 +656,6 @@ body {
   width: 1170px;
   margin: 0 auto;
 }
-
-/*Слайдер*/
 
 .slider {
   position: relative;
@@ -807,12 +823,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  max-width: 104px;
 }
 
 .social-media-item {
@@ -827,8 +844,6 @@ body {
 .social-media-image {
   display: block;
 }
-
-/* спец предложения */
 
 .special-offers-description,
 .goods-description,
@@ -912,8 +927,6 @@ body {
   align-self: flex-start;
 }
 
-/* карточки товаров */
-
 .goods {
   width: 1170px;
   margin: 0 auto;
@@ -932,8 +945,8 @@ body {
   -ms-grid-columns: 270px 30px 270px 30px 270px 30px 270px;
   grid-template-columns: 270px 270px 270px 270px;
   -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
   row-gap: 91px;
   margin: 0;
   padding: 0;
@@ -1019,11 +1032,6 @@ body {
   fill: #e7e7e7;
 }
 
-.goods-card-index {
-
-}
-
-/* О компании */
 .about-company {
   width: 1170px;
   margin: 0 auto;
@@ -1075,11 +1083,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* .advantages-item-wrapper {
-  flex: 1 0;
-  width: 50%;
-} */
 
 .about-company-advantages-item {
   width: 441px;
@@ -1153,8 +1156,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* статьи и новости */
 
 .additional-and-news {
   display: -webkit-box;
@@ -1365,11 +1366,8 @@ body {
 
 .news-button {
   font-size: 16px;
-
   padding: 11px 35px;
 }
-
-/* доставка */
 
 .delivery {
   display: -webkit-box;
@@ -1463,14 +1461,6 @@ body {
   padding: 0;
 }
 
-/* .delivery-order-date,
-.delivery-order-phone,
-.delivery-order-address {
-  color: #2d3440;
-  font-weight: 700;
-  line-height: 20px;
-} */
-
 .date-and-phone-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1497,17 +1487,6 @@ body {
   margin: 0;
 }
 
-/* .delivery-order-date::after {
-  position: absolute;
-  content: "";
-  width: 14px;
-  height: 14px;
-  background-image: url("../images/main/info.svg");
-  background-repeat: no-repeat;
-  left: 44px;
-  top: 3px;
-} */
-
 .delivery-order-phone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1529,7 +1508,6 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-  /* width: 420px; */
   margin: 0;
   margin-bottom: 32px;
 }
@@ -1586,30 +1564,6 @@ body {
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
-
-/* .tooltip-text::after {
-  position: absolute;
-  content: "";
-  background-image: url("../images/main/toggle-border.svg");
-  background-repeat: no-repeat;
-  width: 169px;
-  height: 52px;
-  top: 0;
-  left: 0;
-
-
-} */
-
-/* .delivery-order-address::after {
-  position: absolute;
-  content: "";
-  width: 14px;
-  height: 14px;
-  background-image: url("../images/main/info.svg");
-  background-repeat: no-repeat;
-  left: 56px;
-  top: 3px;
-} */
 
 .delivery-order-button {
   -ms-flex-item-align: center;
@@ -1699,8 +1653,6 @@ body {
   line-height: 20px;
   color: #565c66;
 }
-
-/*футер*/
 
 .page-footer-wrapper {
   display: -webkit-box;
@@ -1797,8 +1749,6 @@ body {
   color: #2d3440;
 }
 
-/*Каталог*/
-
 .catalog-header {
   margin: 0;
   margin-top: 27px;
@@ -1811,7 +1761,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -1857,7 +1807,6 @@ body {
   background-color: #2d3440;
 }
 
-/* фильтр */
 .catalog-goods-filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1902,11 +1851,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .select-list {
@@ -2105,7 +2054,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -2227,7 +2176,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -2247,15 +2196,6 @@ body {
 .catalog-filter-icecream-toppings-item:last-child {
   padding-right: 0;
 }
-
-/* .select-mark {
-  position: absolute;
-  background-image: url("../images/catalog/check-box-off-black.svg");
-  top: 2px;
-  left: 0;
-  width: 16px;
-  height: 16px;
-} */
 
 .select-input[type="checkbox"] + .select-mark {
   position: absolute;
@@ -2310,7 +2250,7 @@ body {
 .pagination-show-more-goods-wrapper {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: ". show-more-button pagination";
+  grid-template-areas: ". show-more-button pagination";
   -ms-grid-columns: 487px auto 168px;
   grid-template-columns: 487px auto 168px;
   margin: 0;
@@ -2344,7 +2284,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
