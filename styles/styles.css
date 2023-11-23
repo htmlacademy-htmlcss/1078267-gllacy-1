@@ -1858,7 +1858,7 @@ body {
   font-weight: 900;
   line-height: 46px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   padding: 0;
 }
 
@@ -1869,7 +1869,6 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  align-items: top;
   max-width: 823px;
   margin: 0;
   padding: 0;
@@ -2047,13 +2046,13 @@ body {
 }
 
 .toggle-min {
-  top: -7px;
-  left: -1px;
+  top: -6px;
+  left: 1px;
 }
 
 .toggle-max {
-  top: -7px;
-  right: -7px;
+  top: -6px;
+  right: -9px;
 }
 
 .catalog-filter-fat-content {
@@ -2346,7 +2345,7 @@ body {
 .pagination-current {
   background-color: #fcfcfc;
   border-radius: 30px;
-  outline: -1px solid #fcfcfc;
+  outline-offset: 0;
 }
 
 .pagination-current:hover {
