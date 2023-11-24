@@ -50,7 +50,7 @@
             </a>
             <div class="popover-search">
               <form class="popover-search-form" action="https://echo.htmlacademy.ru/" method="get">
-                <input type="text" name="search-field" class="field field-search" placeholder="Поиск по сайту">
+                <input type="text" name="search-field" class="field field-search" placeholder="Поиск по сайту"autofocus>
               </form>
             </div>
           </li>
@@ -100,7 +100,7 @@
                 <h2 class="popover-title">Корзина</h2>
                 <ul class="cart-items-list">
                   <li class="cart-item">
-                    <img class="cart-item-image" src="../1078267-gllacy-1/images/main/popular-product-1.jpg" width="46"
+                    <img class="cart-item-image" src="../1078267-gllacy-1/images/catalog/catalog-product-1.jpg" width="46"
                       height="46" alt="мороженое Малинка.">
                     <div class="cart-title-and-description-wrapper">
                       <p class="cart-item-title">Малинка</p>
@@ -108,7 +108,7 @@
                     </div>
                     <p class="cart-item-price">310 ₽</p>
                     <button type="button" class="cart-item-button">
-                      <svg width="16" height="16" fill="#2D3440" role="img" aria-label="Удалить товар из корзины." xmlns="http://www.w3.org/2000/svg">
+                      <svg width="20" height="20" fill="#2D3440" role="img" aria-label="Удалить товар из корзины." xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" />
                       </svg>
@@ -116,7 +116,7 @@
                     </button>
                   </li>
                   <li class="cart-item">
-                    <img class="cart-item-image" src="../1078267-gllacy-1/images/main/popular-product-4.jpg" width="46"
+                    <img class="cart-item-image" src="../1078267-gllacy-1/images/catalog/catalog-product-4.jpg" width="46"
                       height="46" alt="мороженое Баблгам.>">
                     <div class="cart-title-and-description-wrapper">
                       <p class="cart-item-title">Бабл-гам</p>
@@ -124,7 +124,7 @@
                     </div>
                     <p class="cart-item-price">480 ₽</p>
                     <button type="button" class="cart-item-button">
-                      <svg width="16" height="16" fill="#2D3440" role="img" aria-label="Удалить товар из корзины." xmlns="http://www.w3.org/2000/svg">
+                      <svg width="20" height="20" fill="#2D3440" role="img" aria-label="Удалить товар из корзины." xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" />
                       </svg>
@@ -594,8 +594,7 @@
             <input class="field modal-field" type="email" placeholder="email@example.com" id="log-in-modal"
               name="log-in-modal" required>
             <label class="form-label visually-hidden" for="user-message">Вопрос</label>
-            <input class="field modal-field ask-your-question" type="text" id="user-message" name="user-message"
-              placeholder="В свободной форме" required>
+            <textarea class="field modal-field ask-your-question" id="user-message" name="user-message" required>В свободной форме</textarea>
             <button class="button button-red log-in-button-modal" type="submit">Отправить</button>
           </form>
         </div>
