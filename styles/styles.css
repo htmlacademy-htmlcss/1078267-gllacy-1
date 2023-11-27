@@ -673,6 +673,7 @@ body {
   line-height: 20px;
   width: 148px;
   text-wrap: wrap;
+  word-break: break-word;
 }
 
 .navigation-user .search {
