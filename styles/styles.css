@@ -563,7 +563,7 @@ body {
   background-color: #ff4a78;
   border-radius: 30px;
   background-image: url("../images/header/arrow-up.svg");
-  outline: 2px solid #000;
+  outline: 2px solid #000000;
   color: #fcfcfc;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -573,7 +573,7 @@ body {
   background-color: #ff4a78;
   border-radius: 30px;
   background-image: url("../images/header/arrow-up.svg");
-  outline: 2px solid #000;
+  outline: 2px solid #000000;
   color: #fcfcfc;
 }
 
@@ -581,7 +581,7 @@ body {
   background-color: #ff4a78;
   border-radius: 30px;
   background-image: url("../images/header/arrow-up.svg");
-  outline: 2px solid #000;
+  outline: 2px solid #000000;
   color: #fcfcfc;
 }
 
@@ -644,7 +644,7 @@ body {
 .navigation-user .navigation-link:focus {
   background-color: #ff4a78;
   border-radius: 30px;
-  outline: 2px solid #000;
+  outline: 2px solid #000000;
   color: #fcfcfc;
 }
 
@@ -655,7 +655,7 @@ body {
 .navigation-user .navigation-link:focus-visible {
   background-color: #ff4a78;
   border-radius: 30px;
-  outline: 2px solid #000;
+  outline: 2px solid #000000;
   color: #fcfcfc;
 }
 
@@ -1039,7 +1039,7 @@ body {
   justify-content: space-between;
   width: 570px;
   border-radius: 16px;
-  background: #f79;
+  background: #FF7799;
   margin-bottom: 10px;
 }
 
@@ -1227,7 +1227,7 @@ body {
   align-items: center;
   margin: 0;
   padding: 57px 40px 56px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 16px;
 }
 
@@ -1407,7 +1407,7 @@ body {
   border-radius: 16px;
   margin: 0;
   padding: 27px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .news-description {
@@ -1446,7 +1446,7 @@ body {
   border-radius: 4px;
   outline: 1px solid #b9b9b9;
   border: none;
-  background-color: #fff;
+  background-color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -1457,7 +1457,7 @@ body {
 .field:required {
   outline: 1px solid #b9b9b9;
   border: none;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .field:hover {
@@ -1524,7 +1524,7 @@ body {
 .field:required {
   outline: 1px solid #b9b9b9;
   border: none;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .subscribe {
@@ -1745,7 +1745,7 @@ body {
   margin: 0;
   padding: 0;
   background: url("../images/main/contacts-background.jpg") no-repeat;
-  background-color: #fff;
+  background-color: #ffffff;
   background-size: cover;
   border-radius: 16px;
 }
