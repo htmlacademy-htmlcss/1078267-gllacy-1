@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="images/ice-cream-cone.png">
 </head>
 
@@ -46,7 +47,7 @@
           </a>
           <div class="popover-search">
             <form action="https://echo.htmlacademy.ru/" method="get">
-              <input type="text" name="search-field" class="field field-search" placeholder="Поиск по сайту" autofocus>
+              <input type="text" name="search-field" class="field field-search" placeholder="Поиск по сайту" autofocus required>
             </form>
           </div>
         </li>
@@ -96,7 +97,7 @@
               <h2 class="popover-title">Корзина</h2>
               <ul class="cart-items-list">
                 <li class="cart-item">
-                  <img src="../1078267-gllacy-1/images/catalog/catalog-product-1.jpg" width="46" height="46"
+                  <img src="images/catalog/catalog-product-1.jpg" width="46" height="46"
                     alt="мороженое Малинка.">
                   <div class="cart-text-wrapper">
                     <p class="cart-item-title">Малинка</p>
@@ -113,7 +114,7 @@
                   </button>
                 </li>
                 <li class="cart-item">
-                  <img src="../1078267-gllacy-1/images/catalog/catalog-product-4.jpg" width="46" height="46"
+                  <img src="images/catalog/catalog-product-4.jpg" width="46" height="46"
                     alt="мороженое Баблгам.>">
                   <div class="cart-text-wrapper">
                     <p class="cart-item-title">Бабл-гам</p>
@@ -131,7 +132,7 @@
                 </li>
               </ul>
               <div class="cart-place-order">
-                <button class="button button-red cart-button">Оформить заказ</button>
+                <button class="button button-red cart-button" type="button">Оформить заказ</button>
                 <p class="order-cost">Итого: 790 ₽</p>
               </div>
             </div>
@@ -189,10 +190,10 @@
             <div class="range">
               <div class="range-scale">
                 <div class="range-bar" style="right: 52px; left: 24px; width: 80px;">
-                  <button class="range-toggle toggle-min">
+                  <button class="range-toggle toggle-min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
-                  <button class="range-toggle toggle-max">
+                  <button class="range-toggle toggle-max" type="button">
                     <span class="visually-hidden">Изменить максимальную цену.</span>
                   </button>
                 </div>
@@ -531,23 +532,17 @@
         <h2 class="visually-hidden">Магазин Глейси в социальных сетях</h2>
         <ul class="social-media-list">
           <li class="social-media-item">
-            <a class="button-social-media" href="https://t.me/htmlacademy">
-              <img class="social-media-image" src="images/social-media/telegram.svg" width="24" height="24"
-                alt="Ссылка на Телеграм.">
+            <a class="button-social-media telegram-link" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="social-media-item">
-            <a class="button-social-media" href="https://vk.com/htmlacademy">
-              <img class="social-media-image" src="images/social-media/vk.svg" width="24" height="24"
-                alt="Ссылка на Вконтакте.">
+            <a class="button-social-media vk-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-media-item">
-            <a class="button-social-media" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="social-media-image" src="images/social-media/youtube.svg" width="24" height="24"
-                alt="Ссылка на Ютюб.">
+            <a class="button-social-media youtube-link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
